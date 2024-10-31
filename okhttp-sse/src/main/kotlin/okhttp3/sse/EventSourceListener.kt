@@ -34,7 +34,12 @@ abstract class EventSourceListener {
   }
 
   /**
-   * TODO description.
+   * Invoked when an event is received.
+   *
+   * @param eventSource Source of the event
+   * @param id SSE event's id
+   * @param type SSE event's type
+   * @param data SSE event's data
    */
   open fun onEvent(
     eventSource: EventSource,
@@ -45,7 +50,7 @@ abstract class EventSourceListener {
   }
 
   /**
-   * TODO description.
+   * Invoked when the connection has been properly closed by the server.
    *
    * No further calls to this listener will be made.
    */
