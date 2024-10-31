@@ -15,7 +15,7 @@ project.applyOsgi(
 )
 
 dependencies {
-  api(projects.okhttp)
+  api(libs.squareup.okhttp3)
   compileOnly(libs.findbugs.jsr305)
 
   testImplementation(projects.okhttpTestingSupport)
