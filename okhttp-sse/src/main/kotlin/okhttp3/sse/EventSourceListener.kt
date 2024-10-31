@@ -19,6 +19,11 @@ import okhttp3.Response
 
 abstract class EventSourceListener {
   /**
+   * Seconds elapsed between 2 events until connection failed. Doesn't timeout if null
+   */
+  open var timeout: Long? = null
+
+  /**
    * Invoked when an event source has been accepted by the remote peer and may begin transmitting
    * events.
    */
