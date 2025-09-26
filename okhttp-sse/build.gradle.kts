@@ -15,7 +15,7 @@ project.applyOsgi(
 )
 
 dependencies {
-  api(projects.okhttp)
+  api(libs.squareup.okhttp3)
 
   testImplementation(projects.okhttpTestingSupport)
   testImplementation(projects.mockwebserver3)
